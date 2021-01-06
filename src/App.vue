@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-container>
-      <v-row>
+      <v-row justify="center" class="ma-5">
         <img :src="require('./assets/bunner.png')" width="375" height="450" />
       </v-row>
       <v-row justify="center" class="ma-5"> </v-row>
