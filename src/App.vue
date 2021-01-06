@@ -43,7 +43,7 @@ export default {
       this.clickURLEvent("twitter://post?message=" + this.twitterMsg);
     },
     onClickLine() {
-      this.clickURLEvent("https://line.me/R/msg/text/?" + this.twitterMsg);
+      this.clickURLEvent("https://line.me/R/msg/text/?" + this.lineMSG);
     },
     clickURLEvent(url) {
       const e = document.createEvent("MouseEvents"),
