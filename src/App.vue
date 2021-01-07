@@ -21,14 +21,6 @@
           @click="onClickLine"
         />
       </v-row>
-      <v-row justify="center" class="ma-5">
-        <img
-          :src="require('./assets/twitter_share.png')"
-          width="240"
-          height="54"
-          @click="onClickTwitterTmp"
-        />
-      </v-row>
     </v-container>
   </v-app>
 </template>
@@ -47,13 +39,10 @@ export default {
   }),
 
   methods: {
-    onClickTwitter() {
-      this.clickURLEvent("twitter://post?message=" + this.twitterMsg);
-    },
     onClickLine() {
       this.clickURLEvent("https://line.me/R/msg/text/?" + this.lineMSG);
     },
-    onClickTwitterTmp() {
+    onClickTwitter() {
       const ua = ["iPod", "iPad", "iPhone", "Android"];
       const device = ua.find(x => navigator.userAgent.indexOf(x) > 0);
       console.log(device);
