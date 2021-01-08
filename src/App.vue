@@ -45,13 +45,16 @@ export default {
     onClickTwitter() {
       const ua = ["iPod", "iPad", "iPhone", "Android"];
       const device = ua.find(x => navigator.userAgent.indexOf(x) > 0);
-      console.log(device);
+      console.log("ver.001: https://twitter.com/intent/tweet?text=");
 
       if (device === "Android") {
+        // this.clickURLEvent(
+        //   "intent://post?message=" +
+        //     this.twitterMsg +
+        //     "#Intent;scheme=twitter;package=com.twitter.android;end;"
+        // );
         this.clickURLEvent(
-          "intent://post?message=" +
-            this.twitterMsg +
-            "#Intent;scheme=twitter;package=com.twitter.android;end;"
+          "https://twitter.com/intent/tweet?text=" + this.twitterMsg
         );
       } else {
         this.clickURLEvent(
