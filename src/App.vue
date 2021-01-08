@@ -38,6 +38,10 @@ export default {
       "%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3%E3%81%AE%E3%81%94%E6%8B%9B%E5%BE%85%E2%99%AA%0D%0A%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%A6%E5%95%86%E5%93%81%E3%82%92GET%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%0D%0A%0D%0A%E2%86%93%E8%A9%B3%E3%81%97%E3%81%8F%E3%81%AF%E3%81%93%E3%81%A1%E3%82%89%E2%86%93%0D%0Ahttps%3A%2F%2Fliff-demo-bfd0c.web.app%2Fshare001.html"
   }),
 
+  mounted () {
+    console.log("ver.001: https://twitter.com/intent/tweet?text=");
+  },
+
   methods: {
     onClickLine() {
       this.clickURLEvent("https://line.me/R/msg/text/?" + this.lineMSG);
@@ -45,7 +49,6 @@ export default {
     onClickTwitter() {
       const ua = ["iPod", "iPad", "iPhone", "Android"];
       const device = ua.find(x => navigator.userAgent.indexOf(x) > 0);
-      console.log("ver.001: https://twitter.com/intent/tweet?text=");
 
       if (device === "Android") {
         // this.clickURLEvent(
