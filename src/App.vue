@@ -4,7 +4,7 @@
       <v-row justify="center">
         <img :src="require('./assets/bunner.png')" width="375" height="450" />
       </v-row>
-      <v-row justify="center" class="ma-5"> </v-row>
+      <v-row justify="center" class="ma-5"> test </v-row>
       <v-row justify="center" class="ma-5">
         <img
           :src="require('./assets/twitter_share.png')"
