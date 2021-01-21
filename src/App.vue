@@ -66,12 +66,13 @@ export default {
       }
     },
     clickURLEvent(url) {
-      const e = document.createEvent("MouseEvents"),
-        a = document.createElement("a");
-      e.initEvent("click");
-      a.href = url;
-      a.target = "_blank";
-      a.dispatchEvent(e);
+      window.location.href = url;
+      // const e = document.createEvent("MouseEvents"),
+      //   a = document.createElement("a");
+      // e.initEvent("click");
+      // a.href = url;
+      // a.target = "_blank";
+      // a.dispatchEvent(e);
     }
   }
 };
